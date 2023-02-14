@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+button {
+  padding: 6px;
+  margin: 1px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  background-color: rgb(231, 230, 230);
+  border-bottom: 1px solid black;
+}
+
+td,
+th {
+  font-size: small;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+td {
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.edit {
+  background-color: orange;
+  border-width: 0px;
+}
+
+.delete {
+  background-color: red;
+  border-width: 0px;
+}
+
+.view {
+  background-color: skyblue;
+  border-width: 0px;
+}
