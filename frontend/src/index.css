@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+.mainb {
+  width: 100vw;
+}
+
 div {
   display: flex;
   text-align: center;
@@ -18,8 +22,9 @@ button {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  background-color: rgb(231, 230, 230);
+  background-color: rgb(243, 243, 243);
   border-bottom: 1px solid black;
+  width: 120%;
 }
 
 td,
@@ -33,9 +38,16 @@ th {
 td {
   border-top: 0px;
   border-bottom: 0px;
+  width: 100px;
 }
 
 .edit {
+  background-color: orange;
+  border-width: 0px;
+  color: white;
+}
+
+.editbtn {
   background-color: orange;
   border-width: 0px;
 }
@@ -43,6 +55,7 @@ td {
 .delete {
   background-color: red;
   border-width: 0px;
+  color: white;
 }
 
 .view {

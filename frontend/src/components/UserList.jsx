@@ -28,8 +28,11 @@ const UserList = () => {
     <div className="columns mt-5">
       <div className="column is-half">
         <div class="mainb">
-
+          <Link to="add" className="button is-success">
+            Add New
+          </Link>
           <div class="table">
+
             <table className="table is-striped is-fullwidth mt-2">
               <thead>
                 <tr>
@@ -46,12 +49,15 @@ const UserList = () => {
                     <td>{user.number}</td>
                     <td>{user.address}</td>
                     <td>
-                      <Link
-                        to={`edit/${user._id}`}
-                        className="edit"
-                      >
-                        Edit
-                      </Link>
+                      <button className='editbtn'>
+                        <Link
+                          to={`edit/${user._id}`}
+                          className="edit"
+                        >
+                          Edit
+                        </Link>
+                      </button>
+
                       <button
                         onClick={() => deleteUser(user._id)}
                         className="delete"
@@ -64,9 +70,7 @@ const UserList = () => {
               </tbody>
             </table>
           </div>
-          <Link to="add" className="button is-success">
-            Add New
-          </Link>
+
         </div>
 
 
